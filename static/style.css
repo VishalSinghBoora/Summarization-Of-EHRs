@@ -1,0 +1,22 @@
+/* static/style.css */
+:root{
+  --bg:#17e9e9;
+  --card:#fff;
+  --accent:#0b5cff;
+  --muted:#666;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+.container{max-width:880px;margin:40px auto;padding:24px}
+h1{margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 18px}
+form{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,60,0.06)}
+input[type=file]{display:block;margin-bottom:12px}
+.controls{display:flex;gap:10px;align-items:center}
+button{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+button[disabled]{opacity:0.5;cursor:not-allowed}
+.status{margin-top:12px;color:var(--muted)}
+.result{margin-top:18px;background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,60,0.04)}
+.summary{white-space:pre-wrap;font-family:inherit;background:transparent;border:0;margin:0}
+.hidden{display:none}
+footer{margin-top:18px;color:var(--muted);font-size:13px}

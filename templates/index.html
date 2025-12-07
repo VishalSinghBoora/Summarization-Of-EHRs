@@ -1,0 +1,33 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EHRS USING LLM</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ELECTRONIC HEALTH RECORD SUMMERIZER USING LLM</h1>
+    <p class="lead">Upload a PDF, DOCX, or TXT file. Summaries are generated using Large Language Models.</p>
+
+    <form id="uploadForm">
+      <input type="file" id="fileInput" name="file" accept=".pdf,.docx,.txt" />
+      <div class="controls">
+        <button id="submitBtn" type="submit">Summarize</button>
+        <button id="downloadBtn" type="button" disabled>Download Summary</button>
+      </div>
+      <div id="status" class="status"></div>
+    </form>
+
+    <section id="resultSection" class="result hidden">
+      <h2>Summary</h2>
+      <pre id="summary" class="summary"></pre>
+    </section>
+
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
