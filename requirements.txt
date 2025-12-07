@@ -1,0 +1,7 @@
+Flask>=2.0
+google-generativeai
+PyPDF2
+python-docx
+python-magic-bin; platform_system=="Windows"
+python-magic; platform_system!="Windows"
+python-dotenv
